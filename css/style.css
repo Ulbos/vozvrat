@@ -63,6 +63,9 @@ text-decoration: none;
     text-align: right;
     color: #000;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .header-contacts__secondNum{
     font-weight: 500;
@@ -625,3 +628,104 @@ color: #000
 padding-top: 40px;
 padding-bottom: 100px;
 }
+
+
+@media screen  and (max-width:1400px){
+    .header-main__nav{
+        display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+    .collection-cardswrap {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .summer-content {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .man-cardsWrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen  and (min-width:1400px){
+    .modile-svg{
+display: none;
+    }
+}
+@media screen  and (max-width:1200px){
+    .search-container{
+        display: none;
+    }
+    .contacts-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .tovar-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .tovar-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+@media screen  and (max-width:992px){
+
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+}
+@media screen  and (max-width:768px){
+    .header-contacts{
+display: none;
+    }
+    .masi-log{
+        display: none;
+    }
+    .about-desc {
+      font-size: 30px;
+    }
+    .summer-title__h2, .span-summer{
+        font-size: 30px;
+    }
+    .collection-title, .collection-span{
+        font-size: 30px;
+
+    }
+    .collection-sizing{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+           }
+}
+@media screen  and (max-width:548px){
+    .contacts-item__naming {
+        font-size: 18px;
+    }
+    .contacts-item__text {
+        font-size: 16px;
+    }
+    .summer-title__h2, .span-summer{
+        font-size: 25px;
+    }
+    .collection-title, .collection-span{
+        font-size: 25px;
+
+    }
+    .about-desc {
+        font-size: 25px;
+      }
+      .vozvrat-li{
+        font-size: 16px;
+      }
+}
+
